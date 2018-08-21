@@ -1,4 +1,4 @@
-package com.test.singletonppatern;
+package com.test.singletonpattern;
 
 /*
  * Static block initialization implementation is similar to eager
