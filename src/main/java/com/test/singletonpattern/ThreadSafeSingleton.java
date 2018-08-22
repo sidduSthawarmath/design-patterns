@@ -5,7 +5,7 @@ public class ThreadSafeSingleton {
 	private ThreadSafeSingleton(){}
 	
 /*	
-	 * The EagerInitialization,LazyInitialization,StaticBlockInitialization singleton 
+	 * 4. The EagerInitialization,LazyInitialization,StaticBlockInitialization singleton 
 	 * implementation works fine in case of single threaded environment
 	 * but when it comes to multithreaded systems, it can cause issues if
 	 * multiple threads are inside the if loop at the same time. It will destroy
@@ -22,7 +22,8 @@ public class ThreadSafeSingleton {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Instance:\t" + ThreadSafeSingleton.getInstance());
+		System.out.println("Instance hashcode:\t" + ThreadSafeSingleton.getInstance().hashCode());
+		System.out.println("Instance hashcode:\t" + ThreadSafeSingleton.getInstance().hashCode());
 	}
 	
 	

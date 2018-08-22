@@ -1,5 +1,7 @@
 package com.test.singletonpattern;
 
+/*2. Object will created when its required */
+
 public class LazyInitialization {
 
 	private LazyInitialization() {
@@ -15,7 +17,8 @@ public class LazyInitialization {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Singleton instance:\t" + LazyInitialization.getInstance());
+		System.out.println("Singleton instance hashcode:\t" + LazyInitialization.getInstance().hashCode());
+		System.out.println("Singleton instance hashcode:\t" + LazyInitialization.getInstance().hashCode());
 	}
 
 }

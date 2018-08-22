@@ -30,7 +30,8 @@ public class StaticBlockInitialization {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Sigleton object :\t" + StaticBlockInitialization.getInstance());
+		System.out.println("Singleton instance hashcode:\t" + StaticBlockInitialization.getInstance().hashCode());
+		System.out.println("Singleton instance hashcode:\t" + StaticBlockInitialization.getInstance().hashCode());
 	}
 
 }
