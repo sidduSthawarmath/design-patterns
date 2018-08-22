@@ -1,4 +1,4 @@
-package com.test.singletonpattern;
+package com.test.singleton.pattern;
 
 /*
  * 1. In eager initialization, the instance of Singleton Class is created at the

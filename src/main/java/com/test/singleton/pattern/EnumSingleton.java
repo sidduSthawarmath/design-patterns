@@ -1,4 +1,4 @@
-package com.test.singletonpattern;
+package com.test.singleton.pattern;
 
 /*
  *8. The use of Enum to implement Singleton design pattern as Java ensures

@@ -1,4 +1,4 @@
-package com.test.singletonpattern;
+package com.test.singleton.pattern;
 
 public class BillPughSingleton {
 
