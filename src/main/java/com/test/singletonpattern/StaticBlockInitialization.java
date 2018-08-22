@@ -1,7 +1,7 @@
 package com.test.singletonpattern;
 
 /*
- * Static block initialization implementation is similar to eager
+ * 3. Static block initialization implementation is similar to eager
  * initialization, except that instance of class is created in the static
  * block that provides option for exception handling. Both eager
  * initialization and static block initialization creates the instance even
