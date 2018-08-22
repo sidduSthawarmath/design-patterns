@@ -10,11 +10,11 @@ package com.test.factory.pattern;
 public class FactoryDesignPattern {
 
 	public static void main(String[] args) {
-		Mobile samsung = MobileShowRoom.getMobile("samsung");
+		Mobile samsung = MobileShowRoom.getMobile("samsung", "2 GB","16 GB");
 		System.out.println(samsung.getDescription());
 
-		System.out.println("-------------------------");
-		Mobile onePlus = MobileShowRoom.getMobile("onePlus");
+		System.out.println("\n\n\n");
+		Mobile onePlus = MobileShowRoom.getMobile("onePlus","4 GB","64 GB");
 		System.out.println(onePlus.getDescription());
 
 	}
@@ -26,25 +26,59 @@ interface Mobile {
 
 class Samsung implements Mobile {
 
-	public String getDescription() {
-		return "Mobile : Samsung \nRAM : 2GB \nInternal Memory : 16GB \nPrice : Rs.10000 ";
+	private String ram;
+
+	private String internalMemory;
+
+	public Samsung(String ram, String internalMemory) {
+		this.ram = ram;
+		this.internalMemory = internalMemory;
 	}
+
+	public String getDescription() {
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append("Samsung");
+		stringBuilder.append("\n------\n");
+		stringBuilder.append("Ram=");
+		stringBuilder.append(ram);
+		stringBuilder.append(", InternalMemory=");
+		stringBuilder.append(internalMemory);
+		return stringBuilder.toString();
+	}
+
 }
 
 class OnePlus implements Mobile {
+
+	private String ram;
+
+	private String internalMemory;
+
+	public OnePlus(String ram, String internalMemory) {
+		this.ram = ram;
+		this.internalMemory = internalMemory;
+	}
+
 	public String getDescription() {
-		return "Mobile : OnePlus \nRAM : 4GB \nInternal Memory : 64GB \nPrice : Rs.35000 ";
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append("OnePlus");
+		stringBuilder.append("\n------\n");
+		stringBuilder.append("Ram=");
+		stringBuilder.append(ram);
+		stringBuilder.append(", InternalMemory=");
+		stringBuilder.append(internalMemory);
+		return stringBuilder.toString();
 	}
 }
 
 class MobileShowRoom {
 	static Mobile mobile = null;
 
-	public static Mobile getMobile(String mobileName) {
+	public static Mobile getMobile(String mobileName, String ram, String internalMemory) {
 		if ("samsung".equalsIgnoreCase(mobileName)) {
-			mobile = new Samsung();
+			mobile = new Samsung(ram, internalMemory);
 		} else if ("oneplus".equalsIgnoreCase(mobileName)) {
-			mobile = new OnePlus();
+			mobile = new OnePlus(ram, internalMemory);
 		}
 		return mobile;
 	}
