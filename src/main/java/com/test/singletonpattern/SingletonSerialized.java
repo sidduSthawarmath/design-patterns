@@ -10,8 +10,8 @@ import java.io.Serializable;
 
 public class SingletonSerialized {
 	
-	/*
-	 * Sometimes in distributed systems, we need to implement Serializable
+	/* 
+	 * 9. Sometimes in distributed systems, we need to implement Serializable
 	 * interface in Singleton class so that we can store it’s state in file
 	 * system and retrieve it at later point of time. Here is a small singleton
 	 * class that implements Serializable interface also.
