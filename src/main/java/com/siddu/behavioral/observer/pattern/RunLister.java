@@ -1,4 +1,4 @@
-package com.siddu.creational.observer.pattern;
+package com.siddu.behavioral.observer.pattern;
 
 public class RunLister {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.siddu.creational.observer.pattern;
+package com.siddu.behavioral.observer.pattern;
 
 public class EmailServiceImpl implements EmailService {
 
