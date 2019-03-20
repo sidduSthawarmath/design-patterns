@@ -1,4 +1,4 @@
-package com.test.singleton.pattern;
+package com.siddu.singleton.pattern;
 
 /*2. Object will created when its required */
 

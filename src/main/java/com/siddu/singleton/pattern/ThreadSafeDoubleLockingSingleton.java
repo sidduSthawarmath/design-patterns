@@ -1,4 +1,4 @@
-package com.test.singleton.pattern;
+package com.siddu.singleton.pattern;
 
 /*
  *5. ThreadSafeSingleton implementation works fine and provides thread-safety but it reduces

@@ -1,4 +1,4 @@
-package com.test.singleton.pattern;
+package com.siddu.singleton.pattern;
 
 import java.lang.reflect.Constructor;
 
