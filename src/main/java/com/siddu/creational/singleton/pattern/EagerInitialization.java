@@ -1,4 +1,4 @@
-package com.siddu.singleton.pattern;
+package com.siddu.creational.singleton.pattern;
 
 /*
  * 1. In eager initialization, the instance of Singleton Class is created at the

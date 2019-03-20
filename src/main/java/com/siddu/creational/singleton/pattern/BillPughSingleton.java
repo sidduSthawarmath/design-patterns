@@ -1,4 +1,4 @@
-package com.siddu.singleton.pattern;
+package com.siddu.creational.singleton.pattern;
 
 public class BillPughSingleton {
 

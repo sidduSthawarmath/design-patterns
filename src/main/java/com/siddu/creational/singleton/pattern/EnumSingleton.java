@@ -1,4 +1,4 @@
-package com.siddu.singleton.pattern;
+package com.siddu.creational.singleton.pattern;
 
 /*
  *8. The use of Enum to implement Singleton design pattern as Java ensures

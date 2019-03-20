@@ -1,4 +1,4 @@
-package com.siddu.singleton.pattern;
+package com.siddu.creational.singleton.pattern;
 
 /*
  * 3. Static block initialization implementation is similar to eager

@@ -1,4 +1,4 @@
-package com.siddu.observer.pattern;
+package com.siddu.creational.observer.pattern;
 
 public class EmailListener {
 

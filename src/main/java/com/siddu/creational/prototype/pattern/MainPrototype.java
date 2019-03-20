@@ -1,4 +1,4 @@
-package com.siddu.prototype.pattern;
+package com.siddu.creational.prototype.pattern;
 
 import java.util.List;
 

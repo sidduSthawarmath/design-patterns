@@ -1,4 +1,4 @@
-package com.siddu.factory.pattern;
+package com.siddu.creational.factory.pattern;
 
 /*
  * Factory design pattern is used when we have a super class with multiple
